@@ -4,6 +4,8 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   mode: "development",
+  // настройка sourcemap для development-режима (локальный запуск)
+  devtool: "eval-source-map",
   // точка входа в сборку
   entry: "./src/index.jsx",
   output: {
